@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "810433485392",
+    "firebase_url": "https://my-app-two-7b072-default-rtdb.firebaseio.com",
+    "project_id": "my-app-two-7b072",
+    "storage_bucket": "my-app-two-7b072.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810433485392:android:0790eead58fc763cc0cf55",
+        "android_client_info": {
+          "package_name": "com.example.deliziosociboapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810433485392-op35jtmsdqb13j2esirokhq059hui06e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxmkIq0RgkYDC4cj8KX3ZPsDeWsR_mCwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810433485392-op35jtmsdqb13j2esirokhq059hui06e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

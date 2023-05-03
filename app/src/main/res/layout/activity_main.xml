@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.628" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnStart"
         android:layout_width="125dp"
         android:layout_height="55dp"
         android:backgroundTint="#4CAF50"
@@ -76,7 +76,7 @@
         app:layout_constraintVertical_bias="0.973" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/home"
         android:layout_width="113dp"
         android:layout_height="48dp"
         android:backgroundTint="#03A9F4"
