@@ -13,10 +13,12 @@ import com.google.firebase.ktx.Firebase
 class RegisterActivity : AppCompatActivity() {
     lateinit var mTvEnterName: EditText
     lateinit var mPhone: EditText
+    lateinit var txtBottom: EditText
     private lateinit var mTvPassword: EditText
     private lateinit var mreg: Button
     lateinit var mEmail: EditText
     private lateinit var mTvPasswordTwo: EditText
+
 
 
     // create Firebase authentication object
@@ -35,6 +37,8 @@ class RegisterActivity : AppCompatActivity() {
         mreg = findViewById(R.id.btnreg)
         mEmail = findViewById(R.id.email)
         mTvPasswordTwo =findViewById(R.id.passwordTwo)
+        txtBottom = findViewById(R.id.textBottom)
+
 
         // Initialising auth object
         auth = Firebase.auth
@@ -42,6 +46,13 @@ class RegisterActivity : AppCompatActivity() {
         mreg.setOnClickListener {
             signUpUser()
             var tembea = Intent(this,HomeActivity::class.java)
+            startActivity(tembea)
+
+        }
+
+        txtBottom.setOnClickListener {
+            signUpUser()
+            var tembea = Intent(this,LoginActivity::class.java)
             startActivity(tembea)
 
         }

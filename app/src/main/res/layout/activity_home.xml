@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".HomeActivity"
     android:background="#90767C6F"
     >
 
@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="#F0F8F5"
-        app:fabCradleRoundedCornerRadius="20dp"
+        app:fabCradleRoundedCornerRadius="30dp"
         app:fabCradleVerticalOffset="10dp"
         app:fabCradleMargin="20dp">
 
