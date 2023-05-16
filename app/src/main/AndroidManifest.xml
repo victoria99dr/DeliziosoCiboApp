@@ -13,6 +13,36 @@
         android:theme="@style/Theme.DeliziosoCiboApp"
         tools:targetApi="31">
         <activity
+            android:name=".HelpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OffersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chefs_img_container"
+            android:exported="false" />
+        <activity
+            android:name=".ChefsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerViewAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".CookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".recycler_view"
+            android:exported="false" />
+        <activity
+            android:name=".each_dish"
+            android:exported="false" />
+        <activity
+            android:name=".DishesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity

@@ -11,24 +11,14 @@ import androidx.core.content.ContextCompat
 
 class AboutActivity : AppCompatActivity() {
     lateinit var share:Button
-    lateinit var email: Button
     lateinit var call:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about)
         share = findViewById(R.id.share)
-        email = findViewById(R.id.btnInbox)
         call = findViewById(R.id.btnContact)
 
         // Set onclick listeners
-        email.setOnClickListener {
-            val emailIntent =
-                Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "baritori27@gmail.com", null))
-            emailIntent.putExtra(Intent.EXTRA_SUBJECT, "JOB APPLICATION")
-            emailIntent.putExtra(Intent.EXTRA_TEXT, "Dear sir, following the job advertisement")
-            startActivity(Intent.createChooser(emailIntent, "Send email..."))
-
-        }
         share.setOnClickListener {
             val shareIntent = Intent(Intent.ACTION_SEND)
             shareIntent.flags = Intent.FLAG_ACTIVITY_NEW_TASK

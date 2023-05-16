@@ -8,13 +8,14 @@
     android:orientation="vertical"
     tools:context=".RegisterActivity">
 
+
     <TextView
         android:id="@+id/createAccount"
-        android:layout_width="320dp"
+        android:layout_width="334dp"
         android:layout_height="0dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="69dp"
-        android:layout_marginBottom="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="33dp"
         android:text="Create Account"
         android:textColor="#CB1861A3"
         android:textSize="40sp"
@@ -25,16 +26,17 @@
 
     <EditText
         android:id="@+id/EnterName"
-        android:layout_width="242dp"
+        android:layout_width="240dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="22dp"
         android:ems="10"
         android:hint="Enter Full Name"
         android:inputType="text"
+        android:textColor="#0B0C0C"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintBottom_toTopOf="@+id/phone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/createAccount" />
 
@@ -43,41 +45,43 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="22dp"
         android:ems="10"
         android:hint="Enter phone"
         android:inputType="phone"
+        android:textColor="#0B0C0C"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintBottom_toTopOf="@+id/Memail"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
-
+        app:layout_constraintTop_toBottomOf="@+id/EnterName" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="21dp"
+        android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="Enter password"
         android:inputType="textPassword"
+        android:textColor="#0B0C0C"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/passwordTwo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phone" />
+        app:layout_constraintTop_toBottomOf="@+id/Memail" />
 
     <EditText
         android:id="@+id/passwordTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="37dp"
+        android:layout_marginBottom="27dp"
         android:ems="10"
         android:hint="Confirm password"
         android:inputType="textPassword"
+        android:textColor="#0B0C0C"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btnreg"
@@ -86,48 +90,45 @@
 
     <Button
         android:id="@+id/btnreg"
-        android:layout_width="0dp"
+        android:layout_width="201dp"
         android:layout_height="0dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="7dp"
+        android:layout_marginBottom="17dp"
         android:width="30dp"
         android:height="30dp"
         android:backgroundTint="#4CAF50"
         android:text="Register"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/textBottom"
-        app:layout_constraintEnd_toEndOf="@+id/textBottom"
-        app:layout_constraintStart_toStartOf="@+id/passwordTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordTwo" />
 
     <EditText
-        android:id="@+id/email"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:id="@+id/Memail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="19dp"
+        android:layout_marginBottom="13dp"
         android:ems="10"
         android:hint="Enter Email"
         android:inputType="textEmailAddress"
+        android:textColor="#0B0C0C"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/phone"
-        app:layout_constraintEnd_toEndOf="@+id/phone"
+        app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EnterName" />
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
 
     <TextView
         android:id="@+id/textBottom"
-        android:layout_width="239dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="65dp"
+        android:layout_width="254dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="69dp"
         android:text="Already have an account?"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnreg" />
 </androidx.constraintlayout.widget.ConstraintLayout>

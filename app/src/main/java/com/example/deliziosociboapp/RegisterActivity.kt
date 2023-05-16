@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -13,11 +14,12 @@ import com.google.firebase.ktx.Firebase
 class RegisterActivity : AppCompatActivity() {
     lateinit var mTvEnterName: EditText
     lateinit var mPhone: EditText
-    lateinit var txtBottom: EditText
+    lateinit var txtBottom: TextView
     private lateinit var mTvPassword: EditText
     private lateinit var mreg: Button
     lateinit var mEmail: EditText
     private lateinit var mTvPasswordTwo: EditText
+
 
 
 
@@ -35,13 +37,13 @@ class RegisterActivity : AppCompatActivity() {
         mPhone= findViewById(R.id.phone)
         mTvPassword = findViewById(R.id.password)
         mreg = findViewById(R.id.btnreg)
-        mEmail = findViewById(R.id.email)
+        mEmail = findViewById(R.id.Memail)
         mTvPasswordTwo =findViewById(R.id.passwordTwo)
         txtBottom = findViewById(R.id.textBottom)
 
 
         // Initialising auth object
-        auth = Firebase.auth
+        auth = FirebaseAuth.getInstance()
 
         mreg.setOnClickListener {
             signUpUser()
@@ -81,6 +83,7 @@ class RegisterActivity : AppCompatActivity() {
         auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
             if (it.isSuccessful) {
                 Toast.makeText(this, "Successfully Signed Up", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this@RegisterActivity,HomeActivity::class.java))
                 finish()
             } else {
                 Toast.makeText(this, "Registration Failed!", Toast.LENGTH_SHORT).show()
