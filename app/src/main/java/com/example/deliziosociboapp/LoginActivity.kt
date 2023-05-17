@@ -45,9 +45,9 @@ class LoginActivity : AppCompatActivity() {
         // On successful response Display a Toast
         auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
             if (it.isSuccessful) {
-                Toast.makeText(this, "Successfully LoggedIn", Toast.LENGTH_SHORT).show()
-            } else
                 Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
+            } else
+                Toast.makeText(this, "Successfully signed in", Toast.LENGTH_SHORT).show()
         }
     }
 

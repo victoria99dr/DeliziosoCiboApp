@@ -82,11 +82,11 @@ class RegisterActivity : AppCompatActivity() {
         // email and pass in it.
         auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
             if (it.isSuccessful) {
-                Toast.makeText(this, "Successfully Signed Up", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Registration Failed!", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this@RegisterActivity,HomeActivity::class.java))
                 finish()
             } else {
-                Toast.makeText(this, "Registration Failed!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Successfully signed up", Toast.LENGTH_SHORT).show()
             }
         }
     }

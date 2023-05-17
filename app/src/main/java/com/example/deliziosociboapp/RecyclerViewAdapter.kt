@@ -28,11 +28,11 @@ class RecyclerViewAdapter :RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>(
     )
     private val itemImages = arrayOf(
         R.drawable.lasagna,
-        R.drawable.potatosalad,
-        R.drawable.bananasmoothie,
-        R.drawable.tomatosoup,
-        R.drawable.orangecake,
-        R.drawable.westchop,
+        R.drawable.potato,
+        R.drawable.smoothie,
+        R.drawable.tomato,
+        R.drawable.orange,
+        R.drawable.chop,
     )
 
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){

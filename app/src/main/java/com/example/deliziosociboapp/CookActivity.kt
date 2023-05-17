@@ -17,8 +17,9 @@ class CookActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_book)
         recyclerView= findViewById(R.id.recyclerView)
+
         layoutManager = LinearLayoutManager (this)
-//        recyclerView.LayoutManager = layoutManager
+        recyclerView.layoutManager = layoutManager
 
         adapter = RecyclerViewAdapter()
         recyclerView.adapter = adapter
